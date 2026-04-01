@@ -1,15 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	// 	// hex to decimal
-	// 	fmt.Println(hex("ff"))
-	// 	fmt.Println(hex("1E"))
+	fmt.Println(readfile("hex.go"))
+	fmt.Println(hex("2A"))
+	fmt.Println(hex("7B"))
+	fmt.Println(bin("11"))
+	fmt.Println(bin("1101"))
+	fmt.Println(cap("gOlang"))
+	fmt.Println(action("I should Stop SHOUTING", "up"))
+	fmt.Println(last([]string{"how", "are", "you"}, 2))
+	fmt.Println(ispunc("."))
+	fmt.Println(ispunc("?"))
+	fmt.Println(ispunc("a"))
+	fmt.Println(fixspace([]string{"hello", ",", "world", "!"}))
+	fmt.Println(fixatoan("apple"), "apple")
+	fmt.Println(fixatoan("book"), "book")
 
-	// 	// bin to decimal
-	// 	fmt.Println(bin("1010"))
-	// 	fmt.Println(bin("111111"))
-	// 	// change A to An
-	fmt.Println(changeA([]string{"there it was.", "a amazing rock.", "a honest man.", "a book"}))
 }
