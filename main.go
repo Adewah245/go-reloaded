@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
-	fmt.Println(readfile("hex.go"))
+	fmt.Println(sentence("there it was. A amazine rock. A honest man."))
+	fmt.Println(writefile("edge.go ", "package main\n"))
+	fmt.Println(readfile("Hello.go"))
 	fmt.Println(hex("2A"))
 	fmt.Println(hex("7B"))
 	fmt.Println(bin("11"))

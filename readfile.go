@@ -1,13 +1,12 @@
 package main
 
-import (
-	"os"
-)
+import "os"
 
-func readfile(j string) (string, error) {
-	f, error := os.ReadFile(j)
+func readfile(s string) (string, error) {
+	data, error := os.ReadFile(s)
 	if error != nil {
-		return j, nil
+		return s, error
 	}
-	return string(f), error
+	return string(data), error
+
 }
